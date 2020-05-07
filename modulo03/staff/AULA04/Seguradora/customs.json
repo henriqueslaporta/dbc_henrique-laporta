@@ -1,0 +1,15 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:text": {},
+        "th:if": {},
+        "th:unless": {},
+        "th:each": {},
+        "th:href": {
+            "context": "a"
+        },
+        "th:value": {
+            "context": "input"
+        }
+    }
+}

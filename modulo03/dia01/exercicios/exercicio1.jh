@@ -1,0 +1,25 @@
+entity Pais {
+	id Integer,
+	nome String,
+    sigla String
+} 
+
+entity Estado {
+	id Integer,
+	nome String,
+    sigla String
+} 
+
+entity Cidade {
+	id Integer,
+	nome String,
+    sigla String
+}
+
+relationship ManyToOne{
+	Estado{pais} to Pais
+}
+
+relationship ManyToOne{
+	Cidade{estado} to Estado
+}

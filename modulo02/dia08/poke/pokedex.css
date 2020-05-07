@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.flex-container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("pokemon.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pokedex{
+  display: flex;
+  flex-direction: row;
+  min-height: 70vh;
+  background-color: #bf0000;
+  border-radius: 5vh 0 5vh 0;
+  padding: 1em; 
+}
+
+.pokedex > div{
+  width: 20vw;
+}
+
+.dadosPokemon{
+  display: flex;
+  flex-direction: column;
+  border-right: 2px #423d3d solid;
+  padding: 1em;
+}
+
+.infosPokemon{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 233, 233);
+  padding: 1em;
+  margin: 2em;
+}
+
+#inputCode{
+  margin: 2vh 0 0;
+  width: 100%;
+  padding: 1vh;
+  font-size: 1em;
+  text-align: center;
+}
+
+button{
+  margin: 1em 0 0;
+  padding: 2vh;
+  background-color: rgb(16, 51, 21); 
+  color: white;
+  border: 1px black solid;
+}
+
+.imagem{
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.dado{
+  display: flex;
+  flex-direction: row;
+}
+
+.border-black-2{
+  border: #201f1f 2px solid;
+}
+
+.border-gray-2{
+  border: #979797 1vh solid;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+}
+
+.bigCircle{
+  height: 5vh;
+  width: 5vh;
+  border-radius: 5vh;
+  background-color: #58a3f4;
+}
+
+.smallCircle{
+  height: 1.5vh;
+  width: 1.5vh;
+  border-radius: 1.5vh;
+  background-color: #58a3f4;
+  margin-left: 1vh; 
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.red{
+  background-color: red;
+}

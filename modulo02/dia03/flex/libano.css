@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  height: 100%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white{
+  height: calc(100% / 2);
+}
+
+.red{
+  height: calc(100% / 4);
+  background-color: #FF0000;
+}

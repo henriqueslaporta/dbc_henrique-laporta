@@ -1,0 +1,9 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Petshop,br.com.dbc.petshop.service,AnimalService,8,19,0,0,2,8,1,4,1,4
+Petshop,br.com.dbc.petshop.service,ClienteService,11,56,0,0,6,20,0,7,0,7
+Petshop,br.com.dbc.petshop.entity,SexoType,5,33,0,0,0,2,1,3,1,3
+Petshop,br.com.dbc.petshop.entity,HibernateUtil,19,10,0,0,4,4,1,2,1,2
+Petshop,br.com.dbc.petshop.entity,Cliente,89,24,12,0,26,10,18,4,12,4
+Petshop,br.com.dbc.petshop.entity,Animal,98,12,12,0,30,5,18,4,12,4
+Petshop,br.com.dbc.petshop.entity,PersistenceUtils,3,7,0,0,1,5,1,2,1,2
+Petshop,br.com.dbc.petshop,Main,39,0,0,0,15,0,2,0,2,0

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2018.11.11 às 05:36:25 PM BRST 
+
+  -->
+  <bindings xmlns:tns="http://cliente.bean.master.sigep.bsb.correios.com.br/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.com.dbc.locadora.ws"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:VerificaSeTodosObjetosCancelados">
+      <class ref="br.com.dbc.locadora.ws.VerificaSeTodosObjetosCancelados"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:VerificaSeTodosObjetosCanceladosResponse">
+      <class ref="br.com.dbc.locadora.ws.VerificaSeTodosObjetosCanceladosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaPagamentoNaEntrega">
+      <class ref="br.com.dbc.locadora.ws.AtualizaPagamentoNaEntrega"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaPagamentoNaEntregaResponse">
+      <class ref="br.com.dbc.locadora.ws.AtualizaPagamentoNaEntregaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaRemessaAgrupada">
+      <class ref="br.com.dbc.locadora.ws.AtualizaRemessaAgrupada"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:atualizaRemessaAgrupadaResponse">
+      <class ref="br.com.dbc.locadora.ws.AtualizaRemessaAgrupadaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:bloquearObjeto">
+      <class ref="br.com.dbc.locadora.ws.BloquearObjeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:bloquearObjetoResponse">
+      <class ref="br.com.dbc.locadora.ws.BloquearObjetoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaCliente">
+      <class ref="br.com.dbc.locadora.ws.BuscaCliente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaClienteResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaClienteResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaContrato">
+      <class ref="br.com.dbc.locadora.ws.BuscaContrato"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaContratoResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaContratoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaDataAtual">
+      <class ref="br.com.dbc.locadora.ws.BuscaDataAtual"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaDataAtualResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaDataAtualResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaPagamentoEntrega">
+      <class ref="br.com.dbc.locadora.ws.BuscaPagamentoEntrega"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaPagamentoEntregaResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaPagamentoEntregaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicos">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosAdicionaisAtivos">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicosAdicionaisAtivos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosAdicionaisAtivosResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicosAdicionaisAtivosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosValorDeclarado">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicosValorDeclarado"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosValorDeclaradoResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicosValorDeclaradoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosXServicosAdicionais">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicosXServicosAdicionais"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaServicosXServicosAdicionaisResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaServicosXServicosAdicionaisResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaTarifaVale">
+      <class ref="br.com.dbc.locadora.ws.BuscaTarifaVale"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:buscaTarifaValeResponse">
+      <class ref="br.com.dbc.locadora.ws.BuscaTarifaValeResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:calculaTarifaServico">
+      <class ref="br.com.dbc.locadora.ws.CalculaTarifaServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:calculaTarifaServicoResponse">
+      <class ref="br.com.dbc.locadora.ws.CalculaTarifaServicoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarObjeto">
+      <class ref="br.com.dbc.locadora.ws.CancelarObjeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarObjetoResponse">
+      <class ref="br.com.dbc.locadora.ws.CancelarObjetoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarPedidoScol">
+      <class ref="br.com.dbc.locadora.ws.CancelarPedidoScol"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cancelarPedidoScolResponse">
+      <class ref="br.com.dbc.locadora.ws.CancelarPedidoScolResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaCEP">
+      <class ref="br.com.dbc.locadora.ws.ConsultaCEP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaCEPResponse">
+      <class ref="br.com.dbc.locadora.ws.ConsultaCEPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaSRO">
+      <class ref="br.com.dbc.locadora.ws.ConsultaSRO"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaSROResponse">
+      <class ref="br.com.dbc.locadora.ws.ConsultaSROResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaSRO_NEW">
+      <class ref="br.com.dbc.locadora.ws.ConsultaSRONEW"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:consultaSRO_NEWResponse">
+      <class ref="br.com.dbc.locadora.ws.ConsultaSRONEWResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlp">
+      <class ref="br.com.dbc.locadora.ws.FechaPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlpResponse">
+      <class ref="br.com.dbc.locadora.ws.FechaPlpResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlpVariosServicos">
+      <class ref="br.com.dbc.locadora.ws.FechaPlpVariosServicos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:fechaPlpVariosServicosResponse">
+      <class ref="br.com.dbc.locadora.ws.FechaPlpVariosServicosResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:geraDigitoVerificadorEtiquetas">
+      <class ref="br.com.dbc.locadora.ws.GeraDigitoVerificadorEtiquetas"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:geraDigitoVerificadorEtiquetasResponse">
+      <class ref="br.com.dbc.locadora.ws.GeraDigitoVerificadorEtiquetasResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusCartaoPostagem">
+      <class ref="br.com.dbc.locadora.ws.GetStatusCartaoPostagem"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusCartaoPostagemResponse">
+      <class ref="br.com.dbc.locadora.ws.GetStatusCartaoPostagemResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusPLP">
+      <class ref="br.com.dbc.locadora.ws.GetStatusPLP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:getStatusPLPResponse">
+      <class ref="br.com.dbc.locadora.ws.GetStatusPLPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:integrarUsuarioScol">
+      <class ref="br.com.dbc.locadora.ws.IntegrarUsuarioScol"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:integrarUsuarioScolResponse">
+      <class ref="br.com.dbc.locadora.ws.IntegrarUsuarioScolResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterClienteAtualizacao">
+      <class ref="br.com.dbc.locadora.ws.ObterClienteAtualizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterClienteAtualizacaoResponse">
+      <class ref="br.com.dbc.locadora.ws.ObterClienteAtualizacaoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterEmbalagemLRS">
+      <class ref="br.com.dbc.locadora.ws.ObterEmbalagemLRS"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:obterEmbalagemLRSResponse">
+      <class ref="br.com.dbc.locadora.ws.ObterEmbalagemLRSResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaEtiquetas">
+      <class ref="br.com.dbc.locadora.ws.SolicitaEtiquetas"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaEtiquetasResponse">
+      <class ref="br.com.dbc.locadora.ws.SolicitaEtiquetasResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaPLP">
+      <class ref="br.com.dbc.locadora.ws.SolicitaPLP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaPLPResponse">
+      <class ref="br.com.dbc.locadora.ws.SolicitaPLPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaXmlPlp">
+      <class ref="br.com.dbc.locadora.ws.SolicitaXmlPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitaXmlPlpResponse">
+      <class ref="br.com.dbc.locadora.ws.SolicitaXmlPlpResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitarPostagemScol">
+      <class ref="br.com.dbc.locadora.ws.SolicitarPostagemScol"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:solicitarPostagemScolResponse">
+      <class ref="br.com.dbc.locadora.ws.SolicitarPostagemScolResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaEtiquetaPLP">
+      <class ref="br.com.dbc.locadora.ws.ValidaEtiquetaPLP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaEtiquetaPLPResponse">
+      <class ref="br.com.dbc.locadora.ws.ValidaEtiquetaPLPResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaPlp">
+      <class ref="br.com.dbc.locadora.ws.ValidaPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validaPlpResponse">
+      <class ref="br.com.dbc.locadora.ws.ValidaPlpResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemReversa">
+      <class ref="br.com.dbc.locadora.ws.ValidarPostagemReversa"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemReversaResponse">
+      <class ref="br.com.dbc.locadora.ws.ValidarPostagemReversaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemSimultanea">
+      <class ref="br.com.dbc.locadora.ws.ValidarPostagemSimultanea"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:validarPostagemSimultaneaResponse">
+      <class ref="br.com.dbc.locadora.ws.ValidarPostagemSimultaneaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:verificaDisponibilidadeServico">
+      <class ref="br.com.dbc.locadora.ws.VerificaDisponibilidadeServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:verificaDisponibilidadeServicoResponse">
+      <class ref="br.com.dbc.locadora.ws.VerificaDisponibilidadeServicoResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:SQLException">
+      <class ref="br.com.dbc.locadora.ws.SQLException"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Exception">
+      <class ref="br.com.dbc.locadora.ws.Exception"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ErroMontagemRelatorio">
+      <class ref="br.com.dbc.locadora.ws.ErroMontagemRelatorio"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoAdicionalXML">
+      <class ref="br.com.dbc.locadora.ws.ServicoAdicionalXML"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objetoPostal">
+      <class ref="br.com.dbc.locadora.ws.ObjetoPostal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objetoPostalPK">
+      <class ref="br.com.dbc.locadora.ws.ObjetoPostalPK"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:preListaPostagem">
+      <class ref="br.com.dbc.locadora.ws.PreListaPostagem"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:cartaoPostagemERP">
+      <class ref="br.com.dbc.locadora.ws.CartaoPostagemERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:contratoERP">
+      <class ref="br.com.dbc.locadora.ws.ContratoERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:clienteERP">
+      <class ref="br.com.dbc.locadora.ws.ClienteERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:gerenteConta">
+      <class ref="br.com.dbc.locadora.ws.GerenteConta"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:usuarioInstalacao">
+      <class ref="br.com.dbc.locadora.ws.UsuarioInstalacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:parametroMaster">
+      <class ref="br.com.dbc.locadora.ws.ParametroMaster"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:contratoERPPK">
+      <class ref="br.com.dbc.locadora.ws.ContratoERPPK"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:unidadePostagemERP">
+      <class ref="br.com.dbc.locadora.ws.UnidadePostagemERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:enderecoERP">
+      <class ref="br.com.dbc.locadora.ws.EnderecoERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoERP">
+      <class ref="br.com.dbc.locadora.ws.ServicoERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoSigep">
+      <class ref="br.com.dbc.locadora.ws.ServicoSigep"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:chancelaMaster">
+      <class ref="br.com.dbc.locadora.ws.ChancelaMaster"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:servicoAdicionalERP">
+      <class ref="br.com.dbc.locadora.ws.ServicoAdicionalERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:vigenciaERP">
+      <class ref="br.com.dbc.locadora.ws.VigenciaERP"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:embalagemLRSMaster">
+      <class ref="br.com.dbc.locadora.ws.EmbalagemLRSMaster"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:valePostal">
+      <class ref="br.com.dbc.locadora.ws.ValePostal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:coletaSimultanea">
+      <class ref="br.com.dbc.locadora.ws.ColetaSimultanea"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:coleta">
+      <class ref="br.com.dbc.locadora.ws.Coleta"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:produto">
+      <class ref="br.com.dbc.locadora.ws.Produto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:remetente">
+      <class ref="br.com.dbc.locadora.ws.Remetente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:pessoa">
+      <class ref="br.com.dbc.locadora.ws.Pessoa"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:retornoCancelamento">
+      <class ref="br.com.dbc.locadora.ws.RetornoCancelamento"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objetoSimplificado">
+      <class ref="br.com.dbc.locadora.ws.ObjetoSimplificado"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:coletaReversa">
+      <class ref="br.com.dbc.locadora.ws.ColetaReversa"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:objeto">
+      <class ref="br.com.dbc.locadora.ws.Objeto"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusGerente">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.StatusGerente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:tipoGerente">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.TipoGerente"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusUsuario">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.StatusUsuario"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:categoriaServico">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.CategoriaServico"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusPlp">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.StatusPlp"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusObjetoPostal">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.StatusObjetoPostal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:statusCartao">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.StatusCartao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:tipoBloqueio">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.TipoBloqueio"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:acao">
+      <typesafeEnumClass ref="br.com.dbc.locadora.ws.Acao"/>
+    </bindings>
+  </bindings>
+</bindings>

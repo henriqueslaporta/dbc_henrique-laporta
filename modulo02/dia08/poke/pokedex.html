@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="pokedex.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="pokedex border-black-2">
+        <div id="dadosPokemon" class="dadosPokemon">
+          <div class="top">
+            <div class="bigCircle"></div>
+            <div class="smallCircle red"></div>
+            <div class="smallCircle yellow"></div>
+            <div class="smallCircle blue"></div>
+          </div>
+          <div>
+            <h1>Pokedex</h1>
+
+            <div class="imagem border-black-2"><img id="thumb"></div>
+          </div>
+          <div>
+            <input  type="text" pattern="[0-9]{1,3}" id="inputCode" required>
+            <div><button id="btnRandom">Estou com sorte!</button></div>
+          </div>
+        </div>
+        <div class="infosPokemon border-black-2">
+          <div class="dado">
+            <h3>Id: </h3>
+            <p id="id"></p>
+          </div>
+          <div class="dado">
+            <h3>Altura: </h3>
+            <p id="altura"></p>
+          </div>
+          <div class="dado">
+            <h3>Peso: </h3>
+            <p id="peso"></p>
+          </div>
+          <h3>Tipos: </h3>
+          <ul id="tipos">
+          </ul>
+          <h3>Estatisticas: </h3>
+          <ul id="estatistica">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nesse arquivo definimos uma classe Pokémon, para centralizar a lógica de exibição dos bichinhos -->
+    <script src="pokemon.js"></script>
+    <script src="impressora.js"></script>
+    <!-- Nesse arquivo definimos uma classe para centralizar a lógica de COMUNICAÇÃO COM O SERVIDOR -->
+    <script src="pokeApi.js"></script>
+    <!-- Nesse arquivo definimos a lógica da tela da pokédex em si, notem que há uma separação de responsabilidades entre os arquivos -->
+    <script src="pokedex.js"></script>
+  </body>
+</html>

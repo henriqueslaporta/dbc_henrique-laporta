@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  height: 100%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container div{
+  height: calc(100% / 3);
+  flex: 1;
+}
+
+.black{
+  background-color: #000;
+}
+
+.red{
+  background-color: #FF0000;
+}
+
+.yellow{
+  background-color: #FFCC00;
+}

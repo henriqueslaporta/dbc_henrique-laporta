@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ClienteService.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Petshop</a> &gt; <a href="index.source.html" class="el_package">br.com.dbc.petshop.service</a> &gt; <span class="el_source">ClienteService.java</span></div><h1>ClienteService.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.com.dbc.petshop.service;
+
+import br.com.dbc.petshop.entity.Cliente;
+import br.com.dbc.petshop.entity.HibernateUtil;
+import br.com.dbc.petshop.entity.PersistenceUtils;
+import java.util.List;
+import javax.persistence.EntityManager;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+/**
+ *
+ * @author tiago
+ */
+public class ClienteService {
+
+    private static final ClienteService instance;
+
+    static {
+<span class="fc" id="L25">        instance = new ClienteService();</span>
+<span class="fc" id="L26">    }</span>
+
+    public static ClienteService getInstance() {
+<span class="fc" id="L29">        return instance;</span>
+    }
+
+<span class="fc" id="L32">    private ClienteService() {</span>
+<span class="fc" id="L33">    }</span>
+
+    public List&lt;Cliente&gt; findAll() {
+<span class="fc" id="L36">        EntityManager em = PersistenceUtils.getEm();</span>
+<span class="fc" id="L37">        List&lt;Cliente&gt; animais = em.createQuery(&quot;select a from Cliente a&quot;).getResultList();</span>
+<span class="fc" id="L38">        return animais;</span>
+    }
+
+    public List&lt;Cliente&gt; findAllCriteria() {
+<span class="fc" id="L42">        Session session = HibernateUtil.getSessionFactory().openSession();</span>
+<span class="fc" id="L43">        return session.createCriteria(Cliente.class).list();</span>
+    }
+
+    public Cliente create(Cliente c) {
+<span class="fc" id="L47">        EntityManager em = PersistenceUtils.getEm();</span>
+        try {
+<span class="fc" id="L49">            em.getTransaction().begin();</span>
+<span class="fc" id="L50">            c = em.merge(c);</span>
+<span class="fc" id="L51">            em.getTransaction().commit();</span>
+<span class="fc" id="L52">            return c;</span>
+<span class="nc" id="L53">        } catch (Exception e) {</span>
+<span class="nc" id="L54">            em.getTransaction().rollback();</span>
+<span class="nc" id="L55">            throw e;</span>
+        }
+    }
+
+    public Cliente createCriteria(Cliente c) {
+<span class="fc" id="L60">        Session session = HibernateUtil.getSessionFactory().openSession();</span>
+<span class="fc" id="L61">        Transaction t = session.beginTransaction();</span>
+        try {
+<span class="fc" id="L63">            session.save(c);</span>
+<span class="fc" id="L64">            t.commit();</span>
+<span class="fc" id="L65">            return c;</span>
+<span class="nc" id="L66">        } catch (Exception e) {</span>
+<span class="nc" id="L67">            t.rollback();</span>
+<span class="nc" id="L68">            throw e;</span>
+        }
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

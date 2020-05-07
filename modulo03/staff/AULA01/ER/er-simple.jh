@@ -1,0 +1,49 @@
+
+
+entity Pessoa{
+	id Long required,
+	nome String required
+}
+
+entity Contato{
+	id Long required,
+	telefone String required
+}
+
+entity Cliente{
+	id Long required,
+	cpf String required
+}
+
+entity Fornecedor{	
+	id Long required,
+	cnpj String required
+}
+
+entity Produto{
+	id Long required,
+	descricao String required
+}
+
+entity Peca{
+	id Long required,
+	descricao String required
+}
+
+relationship OneToOne{
+	Pessoa{cliente} to Cliente,
+    	Pessoa{fornecedor} to Fornecedor
+}
+
+relationship OneToMany{
+	id Long required,
+	Pessoa{contato} to Contato
+}
+
+relationship ManyToOne{
+	Peca{produto} to Produto
+}
+
+relationship ManyToMany{
+	Produto{fornecedor} to Fornecedor
+}

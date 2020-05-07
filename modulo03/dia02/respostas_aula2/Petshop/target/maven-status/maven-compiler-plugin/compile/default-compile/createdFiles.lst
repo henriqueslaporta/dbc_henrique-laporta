@@ -1,0 +1,8 @@
+br\com\dbc\petshop\service\AnimalService.class
+br\com\dbc\petshop\entity\Cliente.class
+br\com\dbc\petshop\entity\PersistenceUtils.class
+br\com\dbc\petshop\entity\SexoType.class
+br\com\dbc\petshop\entity\Animal.class
+br\com\dbc\petshop\service\ClienteService.class
+br\com\dbc\petshop\entity\HibernateUtil.class
+br\com\dbc\petshop\Main.class

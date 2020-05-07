@@ -1,0 +1,13 @@
+br\com\dbc\petshopjpa\entity\Animal$AnimalBuilder.class
+br\com\dbc\petshopjpa\dao\PersistenceUtils.class
+br\com\dbc\petshopjpa\dao\AbstractDAO.class
+br\com\dbc\petshopjpa\entity\Animal_.class
+br\com\dbc\petshopjpa\entity\Cliente.class
+br\com\dbc\petshopjpa\service\AbstractCrudService.class
+br\com\dbc\petshopjpa\dao\AnimalDAO.class
+br\com\dbc\petshopjpa\entity\Cliente_.class
+br\com\dbc\petshopjpa\service\ClienteService.class
+br\com\dbc\petshopjpa\entity\Cliente$ClienteBuilder.class
+br\com\dbc\petshopjpa\entity\AbstractEntity.class
+br\com\dbc\petshopjpa\entity\Animal.class
+br\com\dbc\petshopjpa\dao\ClienteDAO.class

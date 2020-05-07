@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="formulario.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Quicksand" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <marquee direction="right">Vem ser DBC!!!</marquee>
+  </header>
+  <h2 class="centralizado">Formulario</h2>
+  <form action="" method="post">
+    <fieldset>
+      <legend>Preencha dados:</legend>
+      <div>
+        <label for="nome">Nome:</label>
+        <input name="nome" id="nome" type="text" placeholder="Nome: Ex: Legolas" required>
+      </div>
+      <div>
+        <label for="password">Senha:</label>
+        <input name="password" id="password" type="password" required>
+      </div>
+      <div>
+        <input type="radio" name="tipoElfo" id="elfoNoturno" value="elfoNoturno">
+        <label for="elfoNoturno">Elfo Noturno</label>
+        <input type="radio" name="tipoElfo" id="elfoVerde" value="elfoVerde" checked>
+        <label for="elfoVerde">Elfo Verde</label>
+        <input type="radio" name="tipoElfo" id="elfoDaLuz" value="elfoDaLuz">
+        <label for="elfoDaLuz">Elfo Da Luz</label>
+      </div>
+    </fieldset>
+    <input type="submit" value="Enviar">
+  </form>
+
+  <footer>
+    <span>DBC - Todos direitos reservados &copy;2018 </span>
+  </footer>
+</body>
+</html>

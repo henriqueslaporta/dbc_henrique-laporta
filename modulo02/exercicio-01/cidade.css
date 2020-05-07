@@ -1,0 +1,119 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.fundo-escuro{
+  background-color: #292f36;
+}
+
+a{
+  color: #f7fff7;
+  text-decoration: none;
+}
+
+section{
+  font-family: 'Quicksand', sans-serif;
+  margin: 2em 0;
+}
+
+section h1{
+  color: #f7f7f7;
+  background-color: cornflowerblue;
+  font-size: 300%;
+  padding: 1em;
+}
+
+section a{
+  background-color: #dde7c7;
+  border-radius: 15px;
+  margin-top: 1em;
+  padding: 0.5em;
+  display: block;
+  text-align: center;
+  color: #2a5bd4;
+}
+
+section a:hover{
+  animation-name: background-fade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.margem-conteudo{
+  margin-left: 25%;
+}
+
+.conteudo div{
+  width: 30%;
+  height: 450px;
+  float: left;
+  margin-left: 1em;
+  border-top: #ff6b6b 4px solid;
+}
+
+.conteudo h2{
+  text-align: center;
+}
+
+.tripadvisor{
+  background-color: #7bd4b2;
+}
+
+.titulo{
+  padding: 0.5em;
+  margin: 0;
+  font-size: 2.5em;
+  text-align: center;
+  background-color: cornflowerblue;
+  font-family: 'Satisfy', cursive;
+}
+
+.barra-lateral{
+  position: fixed;
+  height: 100%;
+  width: 25%;
+}
+
+nav{
+  margin: 1em 1em 0 -1em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+ul li{
+  list-style-type: none;
+  padding: 0.5em 0 0.5em 0.5em;
+}
+
+nav li:hover{
+  background-color: #3c434b;
+}
+
+section[id=info-basicas] ul li span{
+  font-size: 1.1em;
+}
+
+@keyframes border-blue {
+  from{border-bottom: #ffffff 2px solid;}
+  to {border-bottom: #4062bb 2px solid;}
+}
+
+@keyframes background-fade {
+  to {background-color: transparent;}
+}
+
+section[id=info-basicas] ul li span:hover{
+  animation-name: border-blue;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.restaurante-img, .bar-img {
+  height: 170px;
+}
+

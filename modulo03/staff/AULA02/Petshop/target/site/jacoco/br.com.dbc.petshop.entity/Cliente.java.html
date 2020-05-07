@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Cliente.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Petshop</a> &gt; <a href="index.source.html" class="el_package">br.com.dbc.petshop.entity</a> &gt; <span class="el_source">Cliente.java</span></div><h1>Cliente.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.com.dbc.petshop.entity;
+
+import java.io.Serializable;
+import java.util.List;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+/**
+ *
+ * @author tiago
+ */
+@Entity
+@Table(name = &quot;CLIENTE&quot;)
+@NamedQueries({
+    @NamedQuery(name = &quot;Cliente.findAll&quot;, query = &quot;SELECT c FROM Cliente c&quot;)})
+public class Cliente implements Serializable {
+
+    @Id
+    @Column(name = &quot;ID&quot;, nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = &quot;CLIENTE_SEQ&quot;)
+    @SequenceGenerator(initialValue = 1, allocationSize = 1, name = &quot;CLIENTE_SEQ&quot;, sequenceName = &quot;CLIENTE_SEQ&quot;)
+    private Long id;
+    @Column(name = &quot;NOME&quot;, nullable = false, length = 100)
+    private String nome;
+    @Column(name = &quot;SEXO&quot;, nullable = false, length = 1)
+    @Enumerated(EnumType.STRING)
+    private SexoType sexo;
+    @Column(name = &quot;PROFISSAO&quot;, nullable = false, length = 100)
+    private String profissao;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = &quot;idCliente&quot;)
+    private List&lt;Animal&gt; animalList;
+
+<span class="fc" id="L49">    public Cliente() {</span>
+<span class="fc" id="L50">    }</span>
+
+<span class="nc" id="L52">    public Cliente(Long id) {</span>
+<span class="nc" id="L53">        this.id = id;</span>
+<span class="nc" id="L54">    }</span>
+
+<span class="nc" id="L56">    public Cliente(Long id, String nome, SexoType sexo, String profissao) {</span>
+<span class="nc" id="L57">        this.id = id;</span>
+<span class="nc" id="L58">        this.nome = nome;</span>
+<span class="nc" id="L59">        this.sexo = sexo;</span>
+<span class="nc" id="L60">        this.profissao = profissao;</span>
+<span class="nc" id="L61">    }</span>
+
+    public Long getId() {
+<span class="nc" id="L64">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="nc" id="L68">        this.id = id;</span>
+<span class="nc" id="L69">    }</span>
+
+    public String getNome() {
+<span class="fc" id="L72">        return nome;</span>
+    }
+
+    public void setNome(String nome) {
+<span class="nc" id="L76">        this.nome = nome;</span>
+<span class="nc" id="L77">    }</span>
+
+    public SexoType getSexo() {
+<span class="nc" id="L80">        return sexo;</span>
+    }
+
+    public void setSexo(SexoType sexo) {
+<span class="nc" id="L84">        this.sexo = sexo;</span>
+<span class="nc" id="L85">    }</span>
+
+    public String getProfissao() {
+<span class="nc" id="L88">        return profissao;</span>
+    }
+
+    public void setProfissao(String profissao) {
+<span class="nc" id="L92">        this.profissao = profissao;</span>
+<span class="nc" id="L93">    }</span>
+
+    public List&lt;Animal&gt; getAnimalList() {
+<span class="nc" id="L96">        return animalList;</span>
+    }
+
+    public void setAnimalList(List&lt;Animal&gt; animalList) {
+<span class="nc" id="L100">        this.animalList = animalList;</span>
+<span class="nc" id="L101">    }</span>
+
+    @Override
+    public int hashCode() {
+<span class="nc" id="L105">        int hash = 0;</span>
+<span class="nc bnc" id="L106" title="All 2 branches missed.">        hash += (id != null ? id.hashCode() : 0);</span>
+<span class="nc" id="L107">        return hash;</span>
+    }
+
+    @Override
+    public boolean equals(Object object) {
+<span class="nc bnc" id="L112" title="All 2 branches missed.">        if (!(object instanceof Cliente)) {</span>
+<span class="nc" id="L113">            return false;</span>
+        }
+<span class="nc" id="L115">        Cliente other = (Cliente) object;</span>
+<span class="nc bnc" id="L116" title="All 8 branches missed.">        if ((this.id == null &amp;&amp; other.id != null) || (this.id != null &amp;&amp; !this.id.equals(other.id))) {</span>
+<span class="nc" id="L117">            return false;</span>
+        }
+<span class="nc" id="L119">        return true;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="nc" id="L124">        return &quot;br.com.dbc.petshop.entity.Cliente[ id=&quot; + id + &quot; ]&quot;;</span>
+    }
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

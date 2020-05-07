@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  height: 100%;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div{
+  height: 10vh;
+  widows: 60vh;
+}
+
+.red{
+  color: red;
+}
+
+.bacground-red{
+  background-color: red;
+}
+
+h1 {
+  font-size: 4em;
+}

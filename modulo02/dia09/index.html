@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Hello</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="pokedex.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="styleshe">
+  </head>
+  <body>
+    <section id="meuPrimeiroApp">
+      <div class="flex-container">
+        <div class="pokedex">
+          <div id="dadosPokemon" class="dadosPokemon">
+            <div class="top">
+              <div class="bigCircle"></div>
+              <div class="smallCircle red"></div>
+              <div class="smallCircle yellow"></div>
+              <div class="smallCircle blue"></div>
+            </div>
+            <div><h1>{{ pokemon.nome }}</h1></div>
+            <div class="imagem border-black-2" ><img v-bind:src="pokemon.img" v-bind:alt="pokemon.nome"></div>
+            <div><input id="inputCode" type="text" v-model="idParaBuscar" placeholder="ex: 103" v-on:blur="buscar()" v-on:keyup="checkId()" v-bind:class="{ error: erro }">
+            <span v-if="erro">Somente numeros!!</span></div>
+            <div><button id="btnRandom" v-on:click="checkRandomNumber()">Estou com sorte!</button></div>
+          </div>
+
+          <div class="infosPokemon border-black-2">
+            <div v-show="pokemon.id > 0">
+              <div class="dado">
+                <h3>Id: </h3>
+                <p>{{ pokemon.id }}</p>
+              </div>
+              <div class="dado">
+                <h3>Altura: </h3>
+                <p>{{ pokemon.altura }} cm</p>
+              </div>
+              <div class="dado">
+                <h3>Peso: </h3>
+                <p>{{ pokemon.peso }} kg</p>
+              </div>
+              <h3>Tipos: </h3>
+              <ul>
+                <li v-for=" tipo in pokemon.tipos "> {{ tipo }} </li>
+              </ul>
+              <h3>Estatisticas: </h3>
+              <ul>
+                <li v-for=" estatistica in pokemon.estatisticas "><div class="dado"><h4>{{ estatistica.stat.name }}: </h4><p>{{ estatistica.base_stat}}</p></div></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    <script src="src/pokeApi.js"></script>
+    <script src="src/pokemon.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+  
+</html>

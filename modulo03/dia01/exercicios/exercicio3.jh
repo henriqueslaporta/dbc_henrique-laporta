@@ -1,0 +1,37 @@
+
+entity Banco {
+	id Integer required,
+	nome String required
+} 
+
+entity Cliente {
+	id Integer required,
+	nome String required,
+    telefone String,
+    notaSerasa Integer
+} 
+
+entity Conta {
+	id Integer required,
+	numeroConta String required,
+    agencia String required,
+}
+
+entity Lancamento {
+	id Integer required,
+    descricao String,
+    data String,
+	valor Float required
+}
+
+relationship OneToOne{
+	Conta{cliente} to Cliente
+}
+
+relationship ManyToOne{
+	Lancamento{conta} to Conta
+}
+
+relationship ManyToOne{
+	Conta{banco} to Banco
+}

@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  background-image: linear-gradient(to right, #000000 , #181818);
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabua{
+  width: 100vh;
+  height: 50vh;
+  background-color: #c07630;
+  border-radius: 2vh;
+  border-bottom: 2vh #915721 solid;
+  border-right: 2vh #915721 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alga{
+  width: 15vh;
+  height: 18vh;
+  background-image: linear-gradient(to right, #000000 , #313131);
+  border-radius: 6vh;
+  display: flex;
+  justify-content: center;
+}
+
+.arroz{
+  width: 13vh;
+  height: 8vh;
+  background-color: #ffffff;
+  border-radius: 6vh;
+  display: flex;
+  margin: 1vh 0 0 0;
+  justify-content: center;
+}
+
+.salmao{
+  width: 7vh;
+  height: 4vh;
+  background-color: coral;
+  border-radius: 20%;
+  margin: 2vh 0 0 0;
+}

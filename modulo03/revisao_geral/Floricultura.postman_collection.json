@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "d916e802-4618-421d-9191-c27a837e69bf",
+		"name": "Floricultura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Produto.findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto.findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto.create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descricao\": \"\",\n\t\"unidadeMedida\": \"\",\n\t\"valor\": 10.0\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto.edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"descricao\": \"\",\n\t\"unidadeMedida\": \"\",\n\t\"valor\": 10.0\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto.delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto.findRange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto/0/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto",
+						"0",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto.count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto/count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Produto.findDescricao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/MinhaFloricultura-1.0-SNAPSHOT/webresources/produto/descricao/tek",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MinhaFloricultura-1.0-SNAPSHOT",
+						"webresources",
+						"produto",
+						"descricao",
+						"tek"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

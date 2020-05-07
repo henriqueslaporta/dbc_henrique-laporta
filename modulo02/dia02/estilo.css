@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+}
+
+a{
+  color:royalblue;
+}
+
+div{
+  padding: 1em;
+  background-color: #9AA899;
+}
+
+section {
+  background-color: #4A7B9D;
+  padding: 1em;
+}
+
+.divFundoAzul{
+  background-color:#4A7B9D;
+}
+
+span:first-of-type {
+  color: blueviolet;
+}
+
+nav {
+  background-color: #54577C;
+  padding: 1em;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 1em 0 0;
+}
+
+nav li a {
+  font-size: 1.2em;
+  color: #FAFFD8;
+}

@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  height: 100%;
+}
+
+.flag-flex {
+  display: flex;
+}
+
+.centro{
+ height: calc(100% * 0.20);
+}
+
+.outros{
+  height: calc(100% * 0.40);
+}
+
+.esquerda{
+  flex: 2;
+}
+
+.meio{
+  flex: 1;
+}
+
+.direita{
+  flex: 7;
+}
+
+.complete{
+  width: 100%;
+}
+
+.white{
+  background-color: #fff;
+}
+
+.blue{
+  background-color: #002f6c;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lista de Clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Lista de Clientes</h2>
+        <div th:unless="${#lists.isEmpty(clientes)}">
+            <div th:each="cliente : ${clientes}">
+                <fieldset>
+                    <div>ID: <span th:text="${cliente.id}">ID</span></div>
+                    <div>Nome: <span th:text="${cliente.nome}">Author</span></div>
+                    <div><a th:href="${cliente.id}">[Editar]</a></div>
+                </fieldset>
+            </div>
+        </div>
+        <div th:if="${#lists.isEmpty(livros)}">
+            <p>Nenhum Cliente Cadastrado</p>
+        </div>
+        <hr />
+        <h3>Adicione um novo cliente</h3>
+        <form method="POST">
+            <fieldset>
+                <legend>Cliente:</legend>
+                Nome: <input type="text" name="nome" maxlength="100"><br><br>
+                <input type="submit" value="salvar"/>
+            </fieldset>
+        </form>
+    </body>
+</html>

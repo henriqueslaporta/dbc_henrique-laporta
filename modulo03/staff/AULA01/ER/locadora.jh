@@ -1,0 +1,95 @@
+
+entity Cliente {
+	primeiroNome String required maxlength(200) minlength(3),
+    sobrenome String required maxlength(200) minlength(3),
+  	cpf String required maxlength(14) minlength(11)
+}
+
+entity Contato {
+	descricao String required maxlength(100) minlength(3),
+    numero String required maxlength(8) minlength(12)
+}
+
+entity Endereco {
+	descricao String required maxlength(100) minlength(3),
+	rua String required maxlength(200) minlength(3),
+	numero Integer required,
+    complemento String maxlength(100) minlength(3),
+    bairro String required maxlength(100) minlength(3),
+    cidade String required maxlength(100) minlength(3),
+    principal Boolean
+}
+
+enum CategoriaEnum {
+	ACAO, AVENTURA, COMEDIA, DRAMA, FICCAO, SUSPENSE, TERROR, ROMANCE
+}
+
+enum MidiaEnum {
+	FITA, DISCO, STREAM
+}
+
+entity Filme {
+	titulo String required maxlength(100) minlength(3),
+    categoria CategoriaEnum required,
+    lancamento Boolean required
+}
+
+entity Midia {
+	local String required maxlength(100) minlength(3),
+    midia MidiaEnum required,
+    aluguel Double required min(1)
+}
+
+entity Fita{
+	multaRebobinagem Double required,
+    multaDano Double required,
+    multaAtraso Double required
+}
+
+entity Disco{
+	multaDano Double required,
+    multaAtraso Double required
+}
+
+entity Stream{
+	
+}
+
+entity Aluguel {
+	locacao LocalDate required,
+    valor Double required,
+}
+
+entity AluguelMidia {
+	devolucao LocalDate required,
+    devolvido LocalDate,
+    multa Double,
+    total Double,
+    quitado Boolean
+}
+
+relationship ManyToOne {
+	Cliente{endereco(descricao) required} to Endereco,
+    Cliente{contato(descricao) required} to Contato,
+    Midia{filme(titulo) required} to Filme,
+    Aluguel{cliente(primeiroNome) required} to Cliente,
+    AluguelMidia{aluguel required} to Aluguel,
+    AluguelMidia{midia(filme) required} to Midia
+}
+
+relationship OneToOne {
+	Fita{midia(filme) required} to Midia,
+    Disco{midia(filme) required} to Midia,
+    Stream{midia(filme) required} to Midia,
+}
+
+// Set dto options
+dto all with mapstruct
+// Set pagination options
+paginate all with pagination
+// Set service options to all except few
+service all with serviceImpl
+// Set elastic search
+search all with elasticsearch
+
+

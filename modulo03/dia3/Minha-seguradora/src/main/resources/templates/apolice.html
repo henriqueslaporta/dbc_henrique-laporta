@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Apolice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Lista de Clientes</h2>
+        <div th:unless="${#lists.isEmpty(apolices)}">
+            <div th:each="apolice : ${apolices}">
+                <fieldset>
+                    <div>ID: <span th:text="${apolice.id}">ID</span></div>
+                    <div>Descrição: <span th:text="${apolice.descricao}">Descrição</span></div>
+                    <div>Inicio: <span th:text="${apolice.inicioVigencia}">Inicio Vigência</span></div>                    
+                    <div>Fim: <span th:text="${apolice.finalVigencia}">Final Vigência</span></div>
+                </fieldset>
+            </div>
+        </div>
+        <div th:if="${#lists.isEmpty(apolices)}">
+            <p>Nenhuma Apólice Cadastrada</p>
+        </div>
+        <hr />
+        <h3>Adicione uma nova apólice</h3>
+        <form method="POST">
+            <fieldset>
+                <legend>Apólice</legend>
+                Nome: <input type="text" name="descricao" maxlength="100"><br><br>
+                Inicio <input type="date" name="inicioVigencia" maxlength="100"><br><br>
+                Fim: <input type="date" name="finalVigencia" maxlength="100"><br><br>
+                <input type="submit" value="salvar"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
