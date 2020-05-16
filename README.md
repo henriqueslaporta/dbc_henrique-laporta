@@ -1,3 +1,5 @@
+Projeto desenvolvido durante o programa de desenvolvimento da DBC Company (https://www.dbccompany.com.br/)
+
 ## Commit do instrutor
 
 ### Um pouco menor
